@@ -15,9 +15,8 @@ jobs:
         uses: actions/checkout@v2
 
 
-### ⬇ IMPORTANT PART ⬇ ###
 
-      - name: Build, Push and Release a Docker container to Heroku. 
+      - name: Build, Push and Release a Docker container. 
         uses: gonuit/heroku-docker-deploy@v1.3.3 
         with:
                     email: ${{ secrets.HEROKU_EMAIL }}
